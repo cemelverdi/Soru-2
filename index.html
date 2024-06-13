@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayısal Loto Oyunu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e9020a7b47.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      input[type="number"] {
+        width: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gameScreen">
+      <h1>Sayısal Loto Oyunu</h1>
+      <p>Aşağıdaki inputlara tahminlerinizi giriniz.</p>
+
+      <div id="guessForm">
+        <input type="number" class="giris giris1" />
+        <input type="number" class="giris" />
+        <input type="number" class="giris" />
+        <input type="number" class="giris giris4" />
+        <input type="number" class="giris" />
+        <input type="number" class="giris" />
+        <button id="tahminGir" onclick="tahminGir()">Tahmin Gir</button>
+      </div>
+
+      <br />
+      <p id="bilgiEkranı"></p>
+      <hr />
+      <button disabled id="kurayiCek" onclick="kurayiCek()">Kurayı Çek</button>
+      <p>Loto Sayıları</p>
+
+      <form id="lotoFormu">
+        <input type="number" id="lotto1" disabled />
+        <input type="number" id="lotto2" disabled />
+        <input type="number" id="lotto3" disabled />
+        <input type="number" id="lotto4" disabled />
+        <input type="number" id="lotto5" disabled />
+        <input type="number" id="lotto6" disabled />
+      </form>
+
+      <p id="eslesenSayilar"></p>
+      <p id="tutturulanSayi"></p>
+    </div>
+
+    <script src="lottery.js"></script>
+  </body>
+</html>
